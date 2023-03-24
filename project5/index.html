@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch it</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>scratch to reveal</h1>
+    </header>
+    <section>
+        <div class="content">
+            <h2>Hi memde chomte</h2>
+            <pre>
+                tumhara badma rahul, abhi raat ke 3 baj rahe h and abhi 24/9/22 h , sorry me ye 
+                gift time pe nahi karpaya but I tried my best and I hope tere ko ye acha lagega, you 
+                mean to me a lomt chomte
+                mene kal classes isilie bunk ki thi ki me dance karke 52 gaj dance kar saku tere lie
+                tera favourite h vo and tu uspe sabse jyada hamsta h but utkarsh ke saamne room me to 
+                nahi kar pata
+                I am proumd to be ur bemstie chomte and I wish tu hamesa khush rahe
+                ek baar fir se happiest birthday chomte <3
+            </pre>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script>
+        function setup()
+        {
+            createCanvas(windowWidth,windowHeight);
+        }
+        function draw()
+        {
+            strokeWeight(100);
+            if(mouseIsPressed === true)
+            {
+                line(mouseX,mouseY,pmouseX,pmouseY)
+            }
+        }
+    </script>
+</body>
+</html>
