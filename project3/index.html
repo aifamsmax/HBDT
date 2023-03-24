@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Let's have some fun</h1>
+        <div class="row">
+            <!-- <div class="col">
+                <div class="feature-img">
+                    <img src="media/hbd1.jpg" width="100%">
+                    <img src="media/Vid_gallery_Img/play.png" class="play-btn" onclick='playVideo("www.youtube.com/embed/6M0BPSv2u_I?autoplay=1")'>
+                </div>
+            </div> -->
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="media/baavanGaj.webp" >
+                        <img src="media/Vid_gallery_Img/play.png" class="play-btn" onclick="playVideo('media/baavangaz_9YhIYcxB.mp4')">
+                    </div>
+                    <p>52Gaj</p>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="media/frog.webp" >
+                        <img src="media/Vid_gallery_Img/play.png" class="play-btn" onclick="playVideo('media/ifonlygod_QuUqA0ZW.mp4')">
+                    </div>
+                    <p>running up that hill</p>
+                </div>
+            </div>
+                <!-- <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="media/Vid_gallery_Img/pic3.png" >
+                        <img src="media/Vid_gallery_Img/play.png" class="play-btn" onclick="playVideo('media/ifonlygod_QuUqA0ZW.mp4')">
+                    </div>
+                    <p>yo yo honey singh</p>
+                </div> -->
+        </div>
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls  id="myVideo">
+            <source src="media/baavangaz_9YhIYcxB.mp4" type="video/mp4">
+        </video>
+        <img src="media/Vid_gallery_Img/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+        function stopVideo()
+        {
+            videoPlayer.style.display="none";
+        }
+        function playVideo(file)
+        {
+            myVideo.src=file;
+            videoPlayer.style.display="block";
+        }
+    </script>
+</body>
+</html>
